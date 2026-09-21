@@ -55,7 +55,7 @@ Differential mode
 
 # ╔═╡ 98801c37-82f8-4cd3-aec7-453a757251c7
 md"""## Coupling between current loops
-Coupling between ``U_{q} \text{ with } i_{used}, Z_{1} \text{ and } U_{EMI} \text{ with } i_{EMI}, Z_{2}``
+Coupling between ``U_{q} \text{ with } i_{used}, Z_{1} \text{ and } U_{noise} \text{ with } i_{noise}, Z_{2}``
 - Impedance coupling
   - caused by common ground
 - capacitive coupling
@@ -72,7 +72,17 @@ md""" ### Coupling on PCB
 
 # ╔═╡ ea1ca667-d250-47d1-a746-6721916c73f6
 md""" ### Capacitive coupling
+- Assumption: ``Z_{C,12} \ll Z_{2} \rightarrow i_{C,12} \propto i_{noise}=\frac{u_{noise}}{Z_{C,12}+R_{i}||{Z_1}}``
+- HF-noise on load : ``u_{L, noise} = i_{noise}\cdot R_{i}||Z_{1} = \frac{u_{noise}\cdot R_{i}||Z_{1}}{Z_{C,12}+R_{i}||{Z_1}}``
 
+- Countermeasures
+  - low-pass-filter
+  - reduced capacity through
+    - reduced length of coupled tracks
+    - higher distance between tracks with different current loops
+    - avoid parallel tracks
+    - electric shielding
+    - ground vias for magnetic field catching
 """
 
 # ╔═╡ 4ff7215d-33ef-44da-8d7e-fa0d5af711e2
