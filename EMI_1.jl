@@ -88,8 +88,56 @@ md""" ### Capacitive coupling
 # ╔═╡ 4ff7215d-33ef-44da-8d7e-fa0d5af711e2
 md"# Filter"
 
+# ╔═╡ cb7c81d0-c494-4907-8115-97250c1d7ae2
+md"""### Introduction
+- Goals
+  - reduce emission
+  - compatibility
+- no filter optimal for all requirements
+"""
+
+# ╔═╡ 0ede55cf-5a74-491b-bddb-61e3668e7b3e
+md"""### Topology
+- linear filter
+  - combination of R, L, C
+  - low-pass
+  - high-pass
+  - band-pass
+  - band-stop
+- non-linea filter
+  - diodes, thyristors, triacs, varistors, gas dischargers
+"""
+
+# ╔═╡ f9ca57e5-96ff-469d-88ee-4feb3b6c83d7
+md"""#### Low-pass first order
+- Transfer function: ``H(j\omega)=\frac{U_{out}}{U_{in}}=\frac{1}{1+j\omega RC}``
+- Amplitude frequency response: ``|H(j\omega)|=\frac{1}{\sqrt{1+j\omega RC}}``
+- Phase frequency response: ``arg(H(j\omega))=-arctan(\omega RC)``
+- Cutoff frequency: ``f_{g}=\frac{1}{2\pi RC}``
+"""
+
+# ╔═╡ 94b45551-b53a-4acb-93e4-7c31028c675b
+md"""#### Low-pass second order
+- Transfer function: ``H(j\omega)=\frac{U_{out}}{U_{in}}=\frac{1}{1-\omega^{2}LC+j\omega RC}``
+- Amplitude frequency response: ``|H(j\omega)=\frac{1}{\omega C\sqrt{R^{2}+(\omega L-\frac{1}{\omega C})^{2}}}``
+- Phase frequency response: ``arg(H(j\omega))=-arctan(\frac{\omega RC}{1-\omega^{2}LC})``
+- resonance frequency: ``f_{r}=\frac{1}{2\pi \sqrt{LC}}``
+- absolute bandwidth: ``b_{\omega}=\frac{R}{L}``
+- relative bandwidth: ``b_{rel}=\frac{b_{\omega}}{\omega_{r}}=R\cdot\sqrt{\frac{C}{L}}``
+- quality: ``Q=\frac{1}{b_{rel}}=\frac{1}{R}\cdot\sqrt{\frac{L}{C}}``
+"""
+
+# ╔═╡ 36606446-8421-49b0-a008-e237fb168161
+
+
 # ╔═╡ 75214a12-daf4-4cb0-a6e5-e046c2a19dbd
 md"# Shielding"
+
+# ╔═╡ 5c9f18bf-b5e1-4ba3-a4c4-633b1e89adfa
+md"""
+Page 85 important
+
+"""
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -657,8 +705,14 @@ version = "17.7.0+0"
 # ╟─7dbbe8dd-9dbf-4a02-b3ea-010ecbfaee58
 # ╟─98801c37-82f8-4cd3-aec7-453a757251c7
 # ╟─fb8de777-78c0-4787-9a42-b03e8765c616
-# ╠═ea1ca667-d250-47d1-a746-6721916c73f6
+# ╟─ea1ca667-d250-47d1-a746-6721916c73f6
 # ╟─4ff7215d-33ef-44da-8d7e-fa0d5af711e2
+# ╟─cb7c81d0-c494-4907-8115-97250c1d7ae2
+# ╟─0ede55cf-5a74-491b-bddb-61e3668e7b3e
+# ╟─f9ca57e5-96ff-469d-88ee-4feb3b6c83d7
+# ╟─94b45551-b53a-4acb-93e4-7c31028c675b
+# ╠═36606446-8421-49b0-a008-e237fb168161
 # ╟─75214a12-daf4-4cb0-a6e5-e046c2a19dbd
+# ╠═5c9f18bf-b5e1-4ba3-a4c4-633b1e89adfa
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
