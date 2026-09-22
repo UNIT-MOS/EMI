@@ -139,6 +139,51 @@ Page 85 important
 
 """
 
+# ╔═╡ c35e242e-2f1b-4aa3-aa03-2257dc5a3bde
+md"""### Casing connector
+- ensure large, conductive connection
+  - conductive foam
+    - foam
+    - enclosed by nickel-copper-sinew
+  - contact spring trap
+    - copper-beryllium/stainless steel
+
+| Base material | Nickel-Copper | Aluminium |
+|---------------|---------------|-----------|
+|Zinc | -- | ++ |
+| Aluminium | -- | ++ |
+| Copper | + | - |
+| Zinn | + | - |
+| Nickel-Silver | + | -
+| Lead | + | - |
+| Nickel | ++ | -- |
+| Silver | ++ | --  |
+| Nickel-Copper | ++ | -- |
+| Gold | ++ | -- |
+"""
+
+# ╔═╡ 04988b86-577b-43fd-86f5-c7e82fddbf82
+md"""### Wiring
+- conductive wiring harness, cable clamps
+"""
+
+# ╔═╡ a9ea9afd-2aae-4af6-96f0-e41689616355
+md"""### PCB
+- ground plane as electric shielding
+- noisy components should be shielded locally
+"""
+
+# ╔═╡ b0d2def0-bcb5-4cb5-abe8-4807f3e50d26
+md"""### Ground connection
+- conductive casing part, ground planes should have low-impedance connections
+- mechanical variants
+  - standoff bolt
+  - grounding cable
+- conductive surface coated contact springs
+  - copper-beryllium
+  - phosphor-bronze
+"""
+
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
@@ -714,5 +759,9 @@ version = "17.7.0+0"
 # ╠═36606446-8421-49b0-a008-e237fb168161
 # ╟─75214a12-daf4-4cb0-a6e5-e046c2a19dbd
 # ╠═5c9f18bf-b5e1-4ba3-a4c4-633b1e89adfa
+# ╟─c35e242e-2f1b-4aa3-aa03-2257dc5a3bde
+# ╟─04988b86-577b-43fd-86f5-c7e82fddbf82
+# ╟─a9ea9afd-2aae-4af6-96f0-e41689616355
+# ╠═b0d2def0-bcb5-4cb5-abe8-4807f3e50d26
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
