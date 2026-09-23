@@ -4,227 +4,92 @@
 using Markdown
 using InteractiveUtils
 
-# ╔═╡ 73059a2f-0bcf-4ac1-bd79-451aba01598c
+# ╔═╡ c49bb43e-b67b-11f1-8287-4b8647fd73af
 using Handcalcs, PlutoUI, LaTeXStrings, PlutoPlotly;
 
-# ╔═╡ 2fa8a75a-1bab-454c-b7af-3df13e0da29f
+# ╔═╡ 51e91ae5-dc60-4c1d-9145-38e22711a563
 PlutoUI.TableOfContents()
 
-# ╔═╡ c16e02cc-b657-11f1-9b7d-8958200eef7c
-md"# Laws"
+# ╔═╡ 7d5150ff-f0b7-4942-a0fb-0c51de709025
+md"# Inductors"
 
-# ╔═╡ a3f74bb7-8d86-423a-94a3-848cf6a77d92
-md"""## History
-- 6.4.1892: telegraphy law in germ reich
-- 22.12. 1920: first radio transmission in Germany
-- 1928: first law against interference intermission
-  - separation into low, high frequency area of radio
-- some more EMC laws
-"""
+# ╔═╡ 3b065f14-a6fe-4e60-82e7-23ec69d66b17
+md"## Categories"
 
-# ╔═╡ 8d1c7286-0c83-42f9-b2fe-9be73aa14425
-md"""## CE
-- implemented in Contract 765/2008 on 9.7.2008
-"""
+# ╔═╡ ee934884-c06b-4677-b478-fe40556f8225
+md"## Ferromagnetism"
 
-# ╔═╡ 95064876-da61-433e-929d-db45ab09c0e4
-md"""## Market observation
-- increasing number of tech coming from non-EU-countries
-- forged CE-signatures common
-"""
+# ╔═╡ be3774c3-c68c-4d38-b3d6-8362be0ac048
+md"## Ferrimagnetismus"
 
-# ╔═╡ fbb98a58-4b4f-43f9-ab9b-984122b59473
-md"""## Examples of EMC-Risk assessment
-- plethora of different scuffed devices as examples
-  - missing CE-certificate on receiver or transmitter
-  - missing manual
-  - missing EU-conformity-declaration
-  - missing identification patterns
-  - missing producer postal code
-"""
+# ╔═╡ 8f749dda-574a-485b-867c-fc6fb6775e0f
+md"## Permeability"
 
-# ╔═╡ f6b16a04-0852-425a-9119-a33aa790c3aa
-md"""## EU norms
-National laws don't entail technical requirements, these are chained in norms by the EU. European norm organisation builds new EU norms.
-"""
+# ╔═╡ b44753ce-3a17-45a5-8dca-dc6e9d48b2fd
+md"### Influence"
 
-# ╔═╡ 88e80e8d-e628-48fe-8c75-2e5cc077bb28
-md"""## EMC-law
-- german EMC-law based on harmonization requirements by EU
-- no concrete norms, more like a framework which needs to be followed
-  - § 1 Application area
-    - applies to hazardous receivers, transmitters
-    - in addition to EU norms
-  - § 3 Declaration of definitions
-    - ,,equipment": devices, stationary devices
-    - ,,bringing into traffic": first product exposure to market
-    - ,, economic actors": producer, authorized representative, trader
-    - ,,conformity grading": checking, wether a device fulfills requirements of §4
-    - ,,EU-conformity declaration": declaration conforming to article 15 of norm 2014/30/EU
-    - ,,federal network agency": responsible for electricity, gas, telecomms, postal, railways
-- following pages explain duties of producers, customers, fines, responsible government bodies and so on
-"""
+# ╔═╡ d744af6a-3062-45bb-85cf-4abc529d662c
+md"### Hysteresis"
 
-# ╔═╡ d98d37b6-5709-4043-88e5-df5d3c075eb8
-md"""## Accreditation
-Companies with these certificates benefit from visible sign of high quality.
-"""
+# ╔═╡ b60bc9a2-6a5d-4c48-a01e-981518dfc44e
+md"### Frequency dependence"
 
-# ╔═╡ 3d876152-42d1-4a60-b30e-48b683cdb121
-md"""## Norm organisations
-- International
-  - ISO
-    - International Organization for Standardization
-  - IEC
-    - International Electrotechnical Commission
-  - CISPR
-    - Comite International Special des Perturbations Radioelectriques
-  - ITU
-    - International Telecommunication Union
-- European
-  - CENELEC
-    - Comite European de Normalisation Electrotechnique
-  - ETSI
-    - European Telecommunications Standards Institute
-- National
-  - DKE
-    - Deutsche Kommission Elektrotechnik Elektronik Informationstechnik
-Professor hates at least one of them but can't tell us because the lecture is being recorded.
-"""
+# ╔═╡ 07b0d604-23dd-4143-9e40-e1718c924655
+md"## Filter"
 
-# ╔═╡ 6bc4452d-78ab-4755-90af-420008ce0271
-md"""## Harmonized norms
-Describes basic norms for aquired products
-"""
+# ╔═╡ 66246a47-6b81-4944-8437-16c6118a33f9
+md"### TLDR"
 
-# ╔═╡ dd290b25-599a-446c-b83d-1ac260c13e85
-md"""## Norm classification
-- Basic
-  - describes phenomena, noise generator, test build
-- Generic
-  - describes requirements for noise emission, interference immunity
-- Product
-  - very specific product requirements
-Following dozen pages describe DIN norms for each classification.
-"""
+# ╔═╡ 31ae4fcc-ddbb-4f4c-95c8-2f702d8e6a75
+md"### One winding core"
 
-# ╔═╡ 2a73e668-404a-4063-a490-f147f77f5591
-md"# Meausurement workplace"
+# ╔═╡ 24cb0d40-372e-4015-8171-084519a1e3cf
+md"### Multiple winding core"
 
-# ╔═╡ b94a8058-0ef2-4454-bbcd-3283eef2e668
-md"""## Free field
-- open area test site is *ideal* measurement place
-- electromagnetic waves can transmit in all directions without resistance
-- ground is covered in conductive material
-- weather-dependent
-"""
+# ╔═╡ 0b35b993-c92e-44cb-9a83-7f7ab41c9712
+md"### Multilayer ferrite"
 
-# ╔═╡ 2bf86466-98f3-4351-ab9d-1652c2df30c3
-md"""## Absorber room
-- weather-independent
-- electromagentic waves get reflected by walls covered in ferrite-pyramids
-- categories
-  - fully anechoic rooms: plastered in reflector pyramids
-  - semi-anechoic-room: conductive floor
-"""
+# ╔═╡ e9a320bf-28d0-438d-be38-b4848b787327
+md"#### Impedance"
 
-# ╔═╡ 7e6af469-18f5-4d27-98ef-faf6ba4d1983
-md"""## Strip conductor
-- good for component tests
-- can be used for noise emission, interference immunity measurement
-- must be in a **shielded** room
-- impedance
-  - ``50\ohm``
-  - ``90\ohm``
-  - ``150\ohm``
-"""
+# ╔═╡ 3da4e87d-845a-4d9f-a912-e1feacf054de
+md"#### Comparison"
 
-# ╔═╡ efd77f79-de0b-4aee-9b9b-e4667879974a
-md"""## GTEM-Cell
-- GTEM: Gigahertz transverse electromagnetic
-- closed strip conductor
-- for 0Hz-18GHz
-- pyramide absorber for reflection dampening > 100MHz
-"""
+# ╔═╡ d64ff2d7-8c2a-4c71-9911-bfcd1e7c6fbd
+md"#### Current dependence"
 
-# ╔═╡ 2bc06f0a-695d-4857-850f-4903b9f8cd5e
-md"""## Turbulence chamber
-- metallic shielded room without absorber
-  - hollow room resonator
-- reflections lead to standing waves within volumes
-- mode scrambler leads to border condition
-- measures complete radiated power
-"""
+# ╔═╡ f072b140-c643-4893-a4d0-63c67e0ebe60
+md"### Current compensated choke"
 
-# ╔═╡ db904e39-ce72-4b5b-8ce4-b7ca4f5c0ce3
-md"# Measurement technology"
+# ╔═╡ 6bb61e34-ef74-4a2c-8429-436d7d0b737b
+md"#### Leakage inductance"
 
-# ╔═╡ 1c8a05b5-600d-4be4-9ecb-8d5559205383
-md"""## Noise
-Because of always statistical swinging density speed even with no current running, we can measure a voltage ``u_{r}`` on resistor R with a temperature T. Voltage swinging is called **noise**.
-"""
+# ╔═╡ 71798cdc-db85-44cc-a293-b2307abf33ba
+md"#### Impedance"
 
-# ╔═╡ 0c9a0fc0-45f7-4eb3-bb66-31464b7466bb
-md"""## Noise spectrum
-- low frequencies
-  - noise power density with ``\frac{1}{f}``
-  - ,,rosa noise"
-- middle frequencies
-  - noise power density per bandwith B *almost* independent of ``f``
-  - ,,white noise"
-"""
+# ╔═╡ e23259ce-c5f6-405d-b698-6b9e881dc648
+md"#### Saturation"
 
-# ╔═╡ b0712265-09e6-41ea-a738-4a5f247ea15f
-md"""## Thermal noise
-- constant power density
-  - frequency up to ``f=\frac{k_{b}\cdot T}{h}``
-- power density of a thermal noise source for load R
-  - ``p_{r,th}=\frac{P_{r,th}}{B}=\frac{U_{r,th}^{2}}{4\cdot R}``
-"""
+# ╔═╡ 2a2f70fc-cf61-4ce0-94cb-299142e568b0
+md"### Cable clamp"
 
-# ╔═╡ 00d0e47e-485f-48f4-a603-8e3ef77f0817
-md"""## Noise dimensions
-- Signal-Noise-Ratio on input, output of two-port-network
-  - ``p_{s,1}``: signal input, ``p_{s,2}``: signal output
-  - ``p_{r,1}``: noise input, ``p_{r,2}``: noise output
-  - ``SNR_{e}=\frac{P_{s,1}}{P_{r,1}}``
-  - ``SNR_{a}=\frac{P_{s,2}}{P_{r,2}}``
-- noise figure of two-port-network
-  - ``F=\frac{SNR_{e}}{SNR_{a}}=\frac{P_{r,ZT}}{g_{ZT}\cdot P_{r,1}}+1>1``
-- noise factor
-  - ``F^{*}=10\cdot lg(F)dB``
-"""
+# ╔═╡ 5a929923-4bbe-4c63-a3b8-baf223354900
+md"#### TLDR"
 
-# ╔═╡ 9f5aaf23-56b9-45ee-a604-0721542e5116
-md"## Devices"
+# ╔═╡ 05f1f909-0d82-4635-8cb2-199141df517a
+md"#### Application variants"
 
-# ╔═╡ 6eb388b4-8440-4f28-ad80-d2ab5ee4c70f
-md"""### Snubber
-- reduces signal amplitude, SNR but not **not* thermal noise
-- noise figure
-  - ``F_{A}=\frac{1}{g_{A}}``
-- noise factor of snubber
-  - ``F_{A}^{*}=10\cdot lg(F_{A})=-10\cdot lg(g_{A})=-G_{A}=A_{A}``
-- snubber-SNR
-  - ``SNR_{a}=SNR_{e}-F_{A}^{*}=SNR_{e}-A_{A}``
-"""
+# ╔═╡ a9f48b16-6a4a-4c9a-9497-5b406629ef2b
+md"#### Mechanism"
 
-# ╔═╡ d3b8e1df-722f-428c-9300-e15bbb73f41a
-md"""### Preamplifier
-- noise figure of n two-port-networks (Friis-Formula)
-  - ``F_{ges}=1+(F_{1}-1)+\frac{F_{2}-1}{g_{1}}+...+\frac{F_{n}-1}{g_{1}+g_{2}+...g_{n-1}}``
-- improves noise figure in measurement chain after dampening in wire
-"""
+# ╔═╡ 1d29c1e0-a22c-4dd7-b1c2-f4f4def08b2b
+md"#### Increase dampening"
 
-# ╔═╡ c0cbfdc6-1d69-47db-8f34-50be1b897708
-md"""### Coaxial cable
-- construction
-  - shield: semi-rigid, mesh
-  - inner conductor: full or hollow cylinder
-  - dielectrica: PVC, PE, PTFE
-- using ferrite socket to dampen coat waves
+# ╔═╡ 620ea764-7c45-4ba4-82d6-f38436bae4fa
+md"#### Air slit"
 
-"""
+# ╔═╡ 0a0e39f7-5677-4b54-a708-e21d6aaadc54
+md"#### ``A_{L}-Value``"
 
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
@@ -782,33 +647,34 @@ version = "17.7.0+0"
 """
 
 # ╔═╡ Cell order:
-# ╠═73059a2f-0bcf-4ac1-bd79-451aba01598c
-# ╠═2fa8a75a-1bab-454c-b7af-3df13e0da29f
-# ╟─c16e02cc-b657-11f1-9b7d-8958200eef7c
-# ╟─a3f74bb7-8d86-423a-94a3-848cf6a77d92
-# ╟─8d1c7286-0c83-42f9-b2fe-9be73aa14425
-# ╟─95064876-da61-433e-929d-db45ab09c0e4
-# ╟─fbb98a58-4b4f-43f9-ab9b-984122b59473
-# ╟─f6b16a04-0852-425a-9119-a33aa790c3aa
-# ╟─88e80e8d-e628-48fe-8c75-2e5cc077bb28
-# ╟─d98d37b6-5709-4043-88e5-df5d3c075eb8
-# ╟─3d876152-42d1-4a60-b30e-48b683cdb121
-# ╟─6bc4452d-78ab-4755-90af-420008ce0271
-# ╟─dd290b25-599a-446c-b83d-1ac260c13e85
-# ╟─2a73e668-404a-4063-a490-f147f77f5591
-# ╟─b94a8058-0ef2-4454-bbcd-3283eef2e668
-# ╟─2bf86466-98f3-4351-ab9d-1652c2df30c3
-# ╟─7e6af469-18f5-4d27-98ef-faf6ba4d1983
-# ╟─efd77f79-de0b-4aee-9b9b-e4667879974a
-# ╟─2bc06f0a-695d-4857-850f-4903b9f8cd5e
-# ╟─db904e39-ce72-4b5b-8ce4-b7ca4f5c0ce3
-# ╟─1c8a05b5-600d-4be4-9ecb-8d5559205383
-# ╟─0c9a0fc0-45f7-4eb3-bb66-31464b7466bb
-# ╟─b0712265-09e6-41ea-a738-4a5f247ea15f
-# ╟─00d0e47e-485f-48f4-a603-8e3ef77f0817
-# ╟─9f5aaf23-56b9-45ee-a604-0721542e5116
-# ╟─6eb388b4-8440-4f28-ad80-d2ab5ee4c70f
-# ╟─d3b8e1df-722f-428c-9300-e15bbb73f41a
-# ╠═c0cbfdc6-1d69-47db-8f34-50be1b897708
+# ╠═c49bb43e-b67b-11f1-8287-4b8647fd73af
+# ╠═51e91ae5-dc60-4c1d-9145-38e22711a563
+# ╟─7d5150ff-f0b7-4942-a0fb-0c51de709025
+# ╟─3b065f14-a6fe-4e60-82e7-23ec69d66b17
+# ╟─ee934884-c06b-4677-b478-fe40556f8225
+# ╟─be3774c3-c68c-4d38-b3d6-8362be0ac048
+# ╟─8f749dda-574a-485b-867c-fc6fb6775e0f
+# ╟─b44753ce-3a17-45a5-8dca-dc6e9d48b2fd
+# ╟─d744af6a-3062-45bb-85cf-4abc529d662c
+# ╟─b60bc9a2-6a5d-4c48-a01e-981518dfc44e
+# ╟─07b0d604-23dd-4143-9e40-e1718c924655
+# ╟─66246a47-6b81-4944-8437-16c6118a33f9
+# ╟─31ae4fcc-ddbb-4f4c-95c8-2f702d8e6a75
+# ╟─24cb0d40-372e-4015-8171-084519a1e3cf
+# ╟─0b35b993-c92e-44cb-9a83-7f7ab41c9712
+# ╟─e9a320bf-28d0-438d-be38-b4848b787327
+# ╟─3da4e87d-845a-4d9f-a912-e1feacf054de
+# ╟─d64ff2d7-8c2a-4c71-9911-bfcd1e7c6fbd
+# ╟─f072b140-c643-4893-a4d0-63c67e0ebe60
+# ╟─6bb61e34-ef74-4a2c-8429-436d7d0b737b
+# ╟─71798cdc-db85-44cc-a293-b2307abf33ba
+# ╟─e23259ce-c5f6-405d-b698-6b9e881dc648
+# ╟─2a2f70fc-cf61-4ce0-94cb-299142e568b0
+# ╟─5a929923-4bbe-4c63-a3b8-baf223354900
+# ╠═05f1f909-0d82-4635-8cb2-199141df517a
+# ╠═a9f48b16-6a4a-4c9a-9497-5b406629ef2b
+# ╠═1d29c1e0-a22c-4dd7-b1c2-f4f4def08b2b
+# ╠═620ea764-7c45-4ba4-82d6-f38436bae4fa
+# ╟─0a0e39f7-5677-4b54-a708-e21d6aaadc54
 # ╟─00000000-0000-0000-0000-000000000001
 # ╟─00000000-0000-0000-0000-000000000002
